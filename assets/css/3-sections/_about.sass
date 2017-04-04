@@ -1,0 +1,37 @@
+h3
+  @extend %small-bold
+  color: $accent-light
+  text-align: center
+  padding: 100px 0 30px
+
+.face-lockup
+  max-width: 780px
+  +display(flex)
+  margin: 0 auto
+  +align-items(center)
+  +justify-content(space-around)
+
+
+  .face-img
+    +size(200px)
+    border-radius: 50%
+    background: url(/assets/img/face_Harish.jpeg)
+    order: 3
+
+  [class^="icon-"]
+    +size(100px)
+    background: $bgcolor
+    border-radius: 50%
+
+    path
+      fill: $accent
+
+
+    &.icon-pencil
+      order: 1
+    &.icon-mouse
+      order: 2
+    &.icon-browser
+      order: 4
+    &.icon-video
+      order: 5
