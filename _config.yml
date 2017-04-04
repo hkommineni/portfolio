@@ -10,6 +10,20 @@ bg-img: sweet-ice-cream-photography-191470.jpg
 avatar: face_Harish.jpeg
 blurb: <p><strong>Harish specializes in programming</strong>. He worked for various projects as <a href="https://www.linkedin.com/in/kommineniharish/">Java Developer</a>, also put efforts in learning <a href="https://www.openstack.org/">Openstack framework</a> and helps UNO to get <a href="https://www.facebook.com/UNODURANGOS/">Cricket rolling.</a></p>
 
+
+# Work section
+
+projects:
+- {name: Reference Deployment Architecture, folder: 'proj-1'}
+- {name: AXE 13B Automation, folder: 'proj-2'}
+- {name: Openstack POC, folder: 'proj-3'}
+- {name: Smart Clinic, folder: 'proj-4'}
+- {name: Cryptography Attacks, folder: 'proj-5'}
+- {name: My Portfolio, folder: 'proj-6'}
+- {name: Parking Lot, folder: 'proj-7'}
+- {name: Typo International, folder: 'proj-8'}
+
+
 # Build settings
 markdown: kramdown
 permalink: pretty
