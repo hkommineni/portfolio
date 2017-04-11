@@ -1,0 +1,34 @@
+# Site settings
+title: Harish Kommineni
+email: harish.kommineni28@gmail.com
+description: "Developer // Designer // Test Automation Engineer // Openstack Developer"
+
+
+#MENU ITEM LIST
+
+menu:
+- {name: About Me, url: '#'}
+- {name: Work, url: '#'}
+- {name: Clients, url: '#'}
+- {name: Contact, url: '#'}
+
+#SKILL LIST
+
+skills:
+- {name: Communication, value: '9'}
+- {name: Organization, value: '7'}
+- {name: Learning, value: '10'}
+- {name: Teaching, value: '6'}
+- {name: Planning, value: '7'}
+- {name: Visual Design, value: '5'}
+- {name: UX Design, value: '8'}
+- {name: Programming, value: '6'}
+
+
+
+# Change the site default images and content here!
+logo: 'logo.svg'
+bg-img: 'sweet-ice-cream-photography-191470.jpg'
+
+avatar: 'face_Harish.jpeg'
+blurb: <p><strong>Harish specializes in programming</strong>. He worked for various projects as <a href="https://www.linkedin.com/in/kommineniharish/">Java Developer</a>, also put efforts in learning <a href="https://www.openstack.org/">Openstack framework</a> and helps UNO to get <a href="https://www.facebook.com/UNODURANGOS/">Cricket rolling.</a></p>
