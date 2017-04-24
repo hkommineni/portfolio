@@ -1,6 +1,7 @@
 $(function() {
 	smoothScrool(300);
 	workBelt();
+	workLoad();
 });
 
 
@@ -30,5 +31,23 @@ function workBelt() {
     $('.work-belt').css('left','0%');
     $('.work-container').hide(800);
   });
+
+}
+
+function workLoad() {
+
+	$.ajaxSetup ({ cache: true });
+	$('.thumb-unit').click(function(){
+
+		var $this = $(this),
+				newTitle = $this.find('strong').text(),
+				newFolder = $this.data('folder'),
+				spinner = '<div class="loader">Loading...</div>',
+				newHTML = '/work/'+ newFolder +'.html';
+
+		$('.project-load').html(spinner).load(newHTML);
+		$('.project-title').text(newTitle)
+
+	});
 
 }
