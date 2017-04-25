@@ -1,26 +1,30 @@
-<section>
+<section class="section-clients">
 
   <h3 id="clients">Clients</h3>
 
 <div class="client-controls">
-  <div class="client-control-next"></div>
-  <div class="client-control-prev"></div>
+  <div class="client-control-next">{% include icons/icon-next.html %}</div>
+  <div class="client-control-prev">{% include icons/icon-prev.html %}</div>
 </div>
 
   <div class="clients-belt">
+
+    {% for client in site.data.settings.clients %}
+
     <div class="client-unit">
 
       <div class="client-face">
-        <img src="/assets/img/clients/face1.jpeg" alt="client-face">
-        <strong class="client-name">Leslie Planos</strong>
-        <em class="client-title">Graduate Advisor UNO</em>
+        <img src="/assets/img/clients/{{ client.avatar }}" alt="client-face">
+        <strong class="client-name">{{ client.name }}</strong>
+        <em class="client-title">{{ client.title }}</em>
       </div>
       <div class="client-content">
         <div class="client-quote-mark">{% include icons/icon-quote-mark.html %}</div>
-        <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        {{ client.quote }}
       </div>
 
     </div>
+    {% endfor %}
   </div>
 
 

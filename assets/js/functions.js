@@ -2,6 +2,8 @@ $(function() {
 	smoothScroll(300);
 	workBelt();
 	workLoad();
+
+	clientStuff();
 });
 
 
@@ -50,4 +52,10 @@ function workLoad() {
 
 	});
 
+}
+
+
+
+function clientStuff() {
+	$('.client-unit').first().addClass('active-client')
 }
